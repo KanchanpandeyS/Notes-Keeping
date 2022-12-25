@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+#add-box{
+margin: 0px auto;
+border: 1px solid #999;
+border-radius:  10px;
+width: 20%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding: 30px;
+align-items: center;
+cursor: pointer;
+margin-bottom: 30px;
+background-color: rgb(141, 237, 205);
+}
+#wrapper{
+    padding: 30px;
+    position: relative;
+}
+.pop-up{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.4);
+    z-index: 2;
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+}
+.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+#pop-up-content{
+    width: 30%;
+    background-color: rgba(135, 159, 220, 0.721);
+    left: 50%;
+    top: 50%;
+    margin: 100px auto;
+    padding: 20px;
+}
+
+.pop-up header{
+    display: flex;
+    justify-content: space-between;
+}
+.pop-up header i{
+    cursor: pointer;
+}
+#notes{
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin: 30px auto;
+}
+#notes > div{
+    border: 1px solid #999;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: palevioletred;
+    /* line-height: 20px; */
+}
+#notes button, #submit{
+    background-color: rgb(158, 186, 116);
+    color: black;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 12px;
+}
+#title, #dec{
+    background-color: rgb(158, 186, 116);
+}
